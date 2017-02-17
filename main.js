@@ -29,7 +29,7 @@ $(document).ready(function(){
     count = 0;
     hard = false;
     gameOn = false;
-    $("#count").text("COUNT");
+    $("#count").text("- -");
   }
 
   //highlight
@@ -88,7 +88,7 @@ $(document).ready(function(){
     console.log('Cheking the input...');                  //to check
     if (randomSequence.join('') !== playerSequence.join('') ){
       console.log('Input wrong.');                  //to check
-      $("#count").text("!!");
+      $("#count").text("X");
       setTimeout(function() { // wait 2 sec, then reset or repeat seqence
         if (hard === true) {
           reset();
