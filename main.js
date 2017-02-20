@@ -100,19 +100,17 @@ $(document).ready(function(){
         }
       }, 2000);
     }else{
-      console.log('Input right. ');                  //to check
-      randomGenerator();
-      playSequence();
-      
-      /*  check win
-      
+      /*  check win  */    
       if (count >= 20) {
-      // modal like tic tac toe
-      //text('You win!')
-      //button Play again?
-      $("#modalScreen").removeClass('hide');
-      } else{}         */
-      
+      // modal
+        $("#endGame").removeClass('hide');
+        $("#gameResult").html('You win!');
+      }else{
+        /* if input right && not win && mode=easy --> repeat sequence and add color */
+        console.log('Input right. ');                  //to check
+        randomGenerator();
+        playSequence();
+      }
     }
   }  //checkPlayerInput
   
