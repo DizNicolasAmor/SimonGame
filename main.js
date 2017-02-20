@@ -92,8 +92,8 @@ $(document).ready(function(){
       $("#count").text("X");
       setTimeout(function() { // wait 2 sec, then reset or repeat seqence
         if (hard === true) {
-          reset();
-          $('#start').html('START');
+          $("#endGame").removeClass('hide');
+          $("#gameResult").html('You lose!');
         }else{
           playerSequence = [];
           playSequence();
