@@ -17,8 +17,15 @@ $(document).ready(function(){
       count = 0,
       hard = false,
       gameOn = false,
-      waitForInput=false;
+      waitForInput=false,
   
+      firstGame=true; 
+
+/* Bug fixed:  when I press start more than once, the function receivePlayerInput(); is called again and again. So, when I press a color, playerSequence pushes duplicate id. 
+The solution is to create a boolean called firstGame=true; 
+In function main(), if  firstGame=true --> call receivePlayerInput();   and then firstGame=false; 
+So now, receivePlayerInput(); is called only one time. */
+
   
   /* - - - - - functions - - - - -  */ 
   
@@ -119,7 +126,11 @@ $(document).ready(function(){
     //generate first challenge
     randomGenerator();
     playSequence();
-    receivePlayerInput();
+    
+    if(firstGame){
+      receivePlayerInput();
+    }
+    firstGame=false; 
   }
    
 
