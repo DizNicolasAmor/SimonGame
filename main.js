@@ -158,11 +158,11 @@ $(document).ready(function(){
     }
   });
 
-  /* //  play Again button: 
+  //  play Again button: 
   $('#playAgain').click(function(){
     reset();
-    $("#modalScreen").addClass('hide');
+    $("#endGame").addClass('hide');
   });
-  */
+  
 
 });
