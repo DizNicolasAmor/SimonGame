@@ -37,6 +37,7 @@ So now, receivePlayerInput(); is called only one time. */
     hard = false;
     gameOn = false;
     $("#count").text("- -");
+    $("#mode").text("EASY");
     $("#start").text("START");
   }
 
