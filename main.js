@@ -30,6 +30,7 @@ $(document).ready(function(){
     hard = false;
     gameOn = false;
     $("#count").text("- -");
+    $("#start").text("START");
   }
 
   //highlight
