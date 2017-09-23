@@ -1,17 +1,16 @@
-# SimonGame
+## SimonGame ##
 
-- - - - 
-a simple Simon Game
-SimonGame
-- - - - - - - - - -
-http://codepen.io/DizNicolasAmor/pen/ggEGjR 
-Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
-This project is a challenge posed by FreeCodeCamp.
+Nico Diz
 
-- - - - - 
-To do: 
--add sounds
--improve style
--add '#modalScreen' element in html and css
-  this modal is class="hide" and shows when user wins. 
-  it has the "Play again?" button 
+https://github.com/DizNicolasAmor
+
+You can see the project here: 
+
+- https://diznicolasamor.github.io/SimonGame/
+- http://codepen.io/DizNicolasAmor/pen/ggEGjR 
+
+A simple Simon Game. 
+
+This project is a challenge posed by FreeCodeCamp. Be free to use it and change it. 
+
+![SimonGameReadme](/images/SimonGameReadme.png?raw=true)
